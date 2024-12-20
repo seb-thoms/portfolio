@@ -1,0 +1,77 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ff00;
+    background-color: #000; /* Full black background */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  section {
+    height: 100vh;
+    padding: 2rem;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+  }
+  
+  #landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1; /* Landing page is visible initially */
+    transform: translateY(0);
+  }
+  
+  .greeting {
+    font-size: 4rem;
+    color: #00ff00;
+  }
+  
+  .dots {
+    animation: flicker 1.5s infinite;
+  }
+  
+  /* Flickering dots animation */
+  @keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  #about {
+    background-color: #111;
+    color: #00ff00;
+  }
+  
+  #projects {
+    background-color: #222;
+    color: #00ff00;
+  }
+  
+  #contact {
+    background-color: #333;
+    color: #00ff00;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: #00ff00;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
