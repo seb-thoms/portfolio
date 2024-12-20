@@ -1,0 +1,26 @@
+# Node.js (if you use npm or yarn for any tools or packages)
+node_modules/
+package-lock.json
+yarn.lock
+
+# System files
+.DS_Store       # macOS system file
+Thumbs.db       # Windows system file
+
+# IDE files
+.vscode/        # VS Code settings folder
+*.sublime*      # Sublime Text settings
+.idea/          # IntelliJ/PhpStorm/WebStorm settings
+
+# Build/Temporary files
+dist/           # If you're using a build tool like Webpack
+build/          # Another common folder for builds
+*.log           # Log files
+
+# Fonts/External assets
+assets/fonts/*.ttf
+assets/fonts/*.otf
+
+# Environment variables or sensitive files
+.env            # If using environment variables
+
