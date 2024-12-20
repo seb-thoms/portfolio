@@ -4,7 +4,7 @@ package-lock.json
 yarn.lock
 
 # System files
-.DS_Store       # macOS system file
+*.DS_Store       # macOS system file
 Thumbs.db       # Windows system file
 
 # IDE files
