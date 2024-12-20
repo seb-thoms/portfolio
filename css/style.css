@@ -33,18 +33,40 @@
   .greeting {
     font-size: 4rem;
     color: #00ff00;
+    display: inline-flex;
+    align-items: center;
   }
   
-  .dots {
-    animation: flicker 1.5s infinite;
+  .dots span {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-left: 0.2rem;
+    background-color: #00ff00;
+    border-radius: 50%;
+    opacity: 0;
+    animation: loading 2s infinite;
   }
   
-  /* Flickering dots animation */
-  @keyframes flicker {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+  .dots span:nth-child(1) {
+    animation-delay: 0s;
   }
   
+  .dots span:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  
+  .dots span:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  /* Blinking animation for dots */
+  @keyframes loading {
+    0%, 20% { opacity: 0; }
+    50%, 100% { opacity: 1; }
+  }
+  
+  /* Section backgrounds */
   #about {
     background-color: #111;
     color: #00ff00;
@@ -54,6 +76,32 @@
     background-color: #222;
     color: #00ff00;
   }
+
+  /* Resume Section */
+#resume {
+    background-color: #444;
+    color: #00ff00;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #00ff00;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #33ff33;
+  }
+  
   
   #contact {
     background-color: #333;
