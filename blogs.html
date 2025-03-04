@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1>Your Name</h1>
+            <p>Web Developer & Designer</p>
+        </div>
+        
+        <ul class="sidebar-nav">
+            <li><a href="index.html#about">About Me</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#resume">Resume</a></li>
+            <li><a href="blogs.html" class="active">Blog</a></li>
+        </ul>
+        
+        <div class="sidebar-footer">
+            <p>Let's connect!</p>
+            <ul class="social-links">
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="blog-section">
+            <div class="container">
+                <h2 class="section-title">My Blog</h2>
+                <p>Thoughts, learnings, and insights about web development, design, and technology.</p>
+                
+                <!-- Blog Controls -->
+                <div class="blog-controls">
+                    <div class="search-container">
+                        <input type="text" id="blog-search" class="search-input" placeholder="Search blogs...">
+                    </div>
+                    <div class="filter-container">
+                        <button class="filter-button active" data-filter="all">All</button>
+                        <button class="filter-button" data-filter="development">Development</button>
+                        <button class="filter-button" data-filter="design">Design</button>
+                        <button class="filter-button" data-filter="technology">Technology</button>
+                    </div>
+                </div>
+                
+                <!-- Blog Grid -->
+                <div class="blog-grid">
+                    <!-- Blog Post 1 -->
+                    <div class="blog-card" data-category="development" data-id="1">
+                        <div class="blog-image">
+                            <img src="images/blog1.jpg" alt="Blog Post 1">
+                        </div>
+                        <div class="blog-details">
+                            <div class="blog-date">April 15, 2023</div>
+                            <h3>Understanding Modern JavaScript</h3>
+                            <p>A deep dive into the latest JavaScript features and how they can improve your code.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Blog Post 2 -->
+                    <div class="blog-card" data-category="design" data-id="2">
+                        <div class="blog-image">
+                            <img src="images/blog2.jpg" alt="Blog Post 2">
+                        </div>
+                        <div class="blog-details">
+                            <div class="blog-date">March 28, 2023</div>
+                            <h3>UI Design Principles Every Developer Should Know</h3>
+                            <p>Essential design principles that will help developers create more user-friendly interfaces.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Blog Post 3 -->
+                    <div class="blog-card" data-category="technology" data-id="3">
+                        <div class="blog-image">
+                            <img src="images/blog3.jpg" alt="Blog Post 3">
+                        </div>
+                        <div class="blog-details">
+                            <div class="blog-date">February 12, 2023</div>
+                            <h3>The Future of Web Development</h3>
+                            <p>Exploring emerging technologies and trends that will shape the future of web development.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Blog Post 4 -->
+                    <div class="blog-card" data-category="development" data-id="4">
+                        <div class="blog-image">
+                            <img src="images/blog4.jpg" alt="Blog Post 4">
+                        </div>
+                        <div class="blog-details">
+                            <div class="blog-date">January 20, 2023</div>
+                            <h3>Building Accessible Web Applications</h3>
+                            <p>Best practices for creating websites that are accessible to all users, including those with disabilities.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Blog Post 5 -->
+                    <div class="blog-card" data-category="design" data-id="5">
+                        <div class="blog-image">
+                            <img src="images/blog5.jpg" alt="Blog Post 5">
+                        </div>
+                        <div class="blog-details">
+                            <div class="blog-date">December 5, 2022</div>
+                            <h3>Color Theory in Web Design</h3>
+                            <p>How to effectively use color in your web projects to create harmony and evoke the right emotions.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Blog Post 6 -->
+                    <div class="blog-card" data-category="technology" data-id="6">
+                        <div class="blog-image">
+                            <img src="images/blog6.jpg" alt="Blog Post 6">
+                        </div>
+                        <div class="blog-details">
+                            <div class="blog-date">November 15, 2022</div>
+                            <h3>Getting Started with Machine Learning</h3>
+                            <p>A beginner's guide to understanding and implementing machine learning in your projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Blog Modal -->
+        <div id="blog-modal" class="blog-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-header">
+                    <h2 id="modal-title">Blog Post Title</h2>
+                    <div id="modal-date" class="blog-date">April 15, 2023</div>
+                </div>
+                <div id="modal-body" class="modal-body">
+                    <!-- Blog content will be loaded here via JavaScript -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <p>© 2024 Sebastian Thomas. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>

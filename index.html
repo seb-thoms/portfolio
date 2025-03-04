@@ -1,59 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian Thomas - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Landing Page -->
-  <section id="landing">
-    <div class="matrix-effect">
-      <h1 class="greeting">
-        Hi
-        <span class="dots">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </h1>
-    </div>
-  </section>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1>Sebastian Thomas</h1>
+            <p>Graduate student in AI</p>
+        </div>
+        
+        <ul class="sidebar-nav">
+            <li><a href="#about" class="active">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <!-- <li><a href="blogs.html">Blog</a></li> -->
+        </ul>
+        
+        <div class="sidebar-footer">
+            <p>Let's connect!</p>
+            <ul class="social-links">
+                <li><a href="https://github.com/seb-thoms" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/sebastian-thomas-39b453177/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </aside>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm Sebastian Thomas, a Master's student in Artificial Intelligence at Northeastern University. I love working on exciting projects and learning new things every day.</p>
-  </section>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="images/profile.jpg" alt="Your Name">
+                    </div>
+                    <div class="about-text">
+                      <h3>Hello, I'm Sebastian Thomas</h3>
+                      
+                      <div class="about-card background-card">
+                          <h4 class="card-title"><span class="accent-icon">🎓</span> Education & Focus</h4>
+                          <p>I'm a graduate student in Artificial Intelligence at Northeastern University, specializing in <span class="highlight">reinforcement learning, generative AI, and algorithmic analysis</span>.</p>
+                      </div>
+                      
+                      <div class="about-card experience-card">
+                          <h4 class="card-title"><span class="accent-icon">💼</span> Experience</h4>
+                          <p>Before diving into AI research, I spent <span class="highlight">four years at Commvault</span>, a leading product-based company, working on <span class="highlight">SQL backups, Python development, solving POCs, and enhancing customer experience</span>.</p>
+                      </div>
+                      
+                      <div class="about-card research-card">
+                          <h4 class="card-title"><span class="accent-icon">🔬</span> Current Research</h4>
+                          <p>Now, I focus on <span class="highlight">AI-driven decision-making, autonomous systems, and real-world machine learning applications</span>. From developing <span class="highlight">adaptive learning systems for NPCs in ViZDoom</span> to implementing <span class="highlight">PPO and A2C for Texas Hold'em</span>, I thrive at the intersection of <span class="highlight">theory and application</span>.</p>
+                      </div>
+                      
+                      <div class="about-card personal-card">
+                          <h4 class="card-title"><span class="accent-icon">🌟</span> Beyond AI</h4>
+                          <p>I love <span class="highlight">hiking</span>, diving into the world of <span class="highlight">Harry Potter</span>, analyzing <span class="highlight">Christopher Nolan's</span> mind-bending films, and immersing myself in <span class="highlight">A.R. Rahman's music</span>.</p>
+                      </div>
+                      
+                      <div class="about-cta">
+                          <p>Explore my projects to see how I tackle complex AI challenges, and let's connect if you're looking for someone who can bridge <span class="highlight">cutting-edge AI research with practical industry solutions</span>.</p>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <p>Here are some of my recent projects. Each one presented unique challenges and opportunities for learning and growth.</p>
+                
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project1.jpg" alt="Project 1">
+                        </div>
+                        <div class="project-details">
+                            <h3>Project Title 1</h3>
+                            <p>Short description of the project, what technologies were used, and what problem it solves.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project2.jpg" alt="Project 2">
+                        </div>
+                        <div class="project-details">
+                            <h3>Project Title 2</h3>
+                            <p>Short description of the project, what technologies were used, and what problem it solves.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project3.jpg" alt="Project 3">
+                        </div>
+                        <div class="project-details">
+                            <h3>Project Title 3</h3>
+                            <p>Short description of the project, what technologies were used, and what problem it solves.</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Django</span>
+                                <span class="tag">PostgreSQL</span>
+                            </div>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Resume Section -->
+        <section id="resume" class="resume">
+            <div class="container">
+                <h2 class="section-title">Resume</h2>
+                <a href="files/Resume.pdf" class="resume-button">Download CV</a>
+                
+                <div class="timeline">
+                  <!-- Experience 1 -->
+                  <div class="timeline-item timeline-left">
+                      <div class="timeline-content">
+                          <div class="timeline-date">2025-Present</div>
+                          <h3>AI Instruction Assistant (Part-time)</h3>
+                          <p class="timeline-organization">Centre for Advancing Teaching through Learning and Research, Northeastern University</p>
+                          <div class="timeline-details">
+                              <ul class="timeline-list">
+                                  <li>Supporting faculty in integrating AI tools into curriculum development</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Education -->
+                  <div class="timeline-item timeline-right">
+                      <div class="timeline-content">
+                          <div class="timeline-date">2024-Present</div>
+                          <h3>Master of Science in Artificial Intelligence</h3>
+                          <p class="timeline-organization">Northeastern University, Boston</p>
+                          <div class="timeline-details">
+                              <ul class="timeline-list">
+                                  <li>Specializing in reinforcement learning and generative AI</li>
+                                  <li>Coursework: Foundations of AI, Programming Design Paradigms, Reinforcement Learning, Algorithms</li>
+                              </ul>
+                              <div class="timeline-achievements">
+                                  <span class="achievement">GPA: 4.0/4.0</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Experience 1 -->
+                  <div class="timeline-item timeline-left">
+                      <div class="timeline-content">
+                          <div class="timeline-date">2020-2024</div>
+                          <h3>Senior Engineer</h3>
+                          <p class="timeline-organization">Commvault</p>
+                          <div class="timeline-details">
+                              <ul class="timeline-list">
+                                  <li>Specialized in MS-SQL backups and Python development</li>
+                                  <li>Led technical solutions for complex client requirements</li>
+                                  <li>Developed automated testing frameworks reducing QA time by 40%</li>
+                                  <li>Collaborated with cross-functional teams to enhance product capabilities</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Education -->
+                  <div class="timeline-item timeline-right">
+                      <div class="timeline-content">
+                          <div class="timeline-date">2016-2020</div>
+                          <h3>Bachelor of Technology in Computer Science and Engineering</h3>
+                          <p class="timeline-organization">Mar Athanasius College of Engineering, India</p>
+                          <div class="timeline-details">
+                              <ul class="timeline-list">
+                                  <li>Focused on algorithms, data structures, and software development</li>
+                                  <li>Developed a Recurrent Neural Network to do voice segregation for capstone project</li>
+                                  <li>Participated and won multiple hackathons and coding competitions</li>
+                              </ul>
+                              <div class="timeline-achievements">
+                                  <span class="achievement">Best Outgoing Student - Computer Science Department</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <p>© 2024 Sebastian Thomas. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="https://github.com/yourusername/project1" target="_blank">Project 1</a>: Description of your project.</li>
-      <li><a href="https://github.com/yourusername/project2" target="_blank">Project 2</a>: Description of another project.</li>
-    </ul>
-  </section>
-
-    <!-- Resume Section -->
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>Interested in learning more about my experience? Download my resume below:</p>
-        <a href="files/Resume.pdf" download class="btn">Download Resume</a>
-      </section>
-    
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Feel free to reach out to me:</p>
-    <ul>
-      <li><a href="https://github.com/seb-thoms" target="_blank">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/sebastian-thomas-39b453177" target="_blank">LinkedIn</a></li>
-    </ul>
-  </section>
-
-  <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
